@@ -1,0 +1,255 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700;800;900&family=Roboto+Condensed:ital,wght@0,300;0,400;0,700;1,300;1,400;1,700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Noticia+Text:ital,wght@0,400;0,700;1,400;1,700&family=Poppins:wght@200;300;400;500;600;700;800;900&family=Roboto+Condensed:ital,wght@0,300;0,400;0,700;1,300;1,400;1,700&display=swap");
+*,
+*::after,
+*::before {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+a {
+  text-decoration: none;
+  text-transform: uppercase;
+  font-family: "Roboto";
+  font-weight: 500;
+}
+
+body {
+  font-family: "Roboto Condensed";
+  overflow-y: hidden;
+}
+
+.container_home {
+  background-image: url(./starter-code/assets/home/background-home-desktop.jpg);
+  height: 100vh;
+  padding: 5em;
+}
+
+.container_home nav .logo .thin-line {
+  height: 2px;
+  width: 500px;
+  background-color: #fff;
+  margin-left: 10em;
+}
+
+.container nav {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.container .logo {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.container .out-box {
+  background-color: rgba(255, 255, 255, 0.07);
+  height: 4em;
+  width: 32em;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  border-radius: 15px;
+}
+
+.container .third-nav ul {
+  list-style: none;
+  float: right;
+  margin: 0.45em;
+  margin-left: 3em;
+  padding: 0.2em;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.container .third-nav ul li a {
+  line-height: 30px;
+  color: #fff;
+  padding: 7px;
+  text-decoration: none;
+  font-size: 15px;
+  font-weight: bold;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  word-spacing: 10px;
+}
+
+.container .third-nav ul li a:hover {
+  background: rgba(255, 255, 255, 0.07);
+  border-radius: 15px;
+}
+
+.container .subhead {
+  margin-top: 8em;
+  color: white;
+  letter-spacing: 3px;
+  text-transform: uppercase;
+  font-family: "Roboto";
+  font-weight: 300;
+  word-spacing: 2px;
+}
+
+.container h1 {
+  font-family: "Noticia";
+  font-weight: 300;
+  font-size: 8em;
+  color: white;
+  text-transform: uppercase;
+}
+
+.container span {
+  color: white;
+  padding-right: 5em;
+  font-family: "Roboto";
+  font-weight: 300;
+  font-size: 1em;
+  text-align: justify;
+  text-justify: inter-word;
+}
+
+.container .circle {
+  background-color: white;
+  height: 230px;
+  width: 230px;
+  border-radius: 50%;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  margin-left: 50em;
+  margin-top: -10em;
+}
+
+.container .circle section {
+  font-family: "Noticia";
+  font-size: 1.5em;
+  text-transform: uppercase;
+  padding: 3.5em;
+  padding-left: 2.5em;
+  padding-top: 4.2em;
+  letter-spacing: 2px;
+}
+
+.container .container_destination {
+  background-image: url(./starter-code/assets/destination/background-destination-desktop.jpg);
+  padding: 5em;
+  height: 100vh;
+}
+
+.container .container_destination h1 {
+  padding-left: 0;
+}
+
+.container .container_destination .subhead {
+  margin-top: 4em;
+}
+
+.container nav .logo .thin-line {
+  height: 2px;
+  width: 500px;
+  background-color: #ffffff;
+  margin-left: 10em;
+}
+
+.container .arrange {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.container .arrange .subhead {
+  color: white;
+  letter-spacing: 3px;
+  text-transform: uppercase;
+  font-family: "Roboto";
+  font-weight: 300;
+  word-spacing: 2px;
+}
+
+.container .arrange .mars img {
+  height: 20em;
+  padding-top: 3em;
+  padding-left: 3em;
+}
+
+.container .arrange .main {
+  margin: 3em;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  width: 30em;
+}
+
+.container .arrange .main .mid-nav {
+  padding-left: 0;
+  margin: 0;
+}
+
+.container .arrange .main .mid-nav ul {
+  list-style: none;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  color: #fff;
+  padding-top: 5em;
+  text-transform: uppercase;
+  font-size: small;
+  display: flex;
+  gap: 40px;
+}
+
+.container .arrange .main .mid-nav ul .line {
+  text-decoration: underline;
+}
+
+.container .arrange .note {
+  padding: 0;
+  width: 2em;
+}
+
+.container .arrange .one-line {
+  height: 2px;
+  width: 400px;
+  background-color: #ffffff;
+  margin-top: 2em;
+  margin-bottom: 2em;
+}
+
+.container .arrange .features-list {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.container .arrange .features-list .features-section {
+  color: #fff;
+}
+
+.container .arrange .features-list .features-section .sub-list {
+  text-transform: uppercase;
+  font-size: small;
+  letter-spacing: 2px;
+}
+
+.container .arrange .features-list .features-section h4 {
+  font-family: "Noticia";
+  font-size: 1.5em;
+}
+/*# sourceMappingURL=main.css.map */
