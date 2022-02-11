@@ -8,6 +8,7 @@
   padding: 0;
   box-sizing: border-box;
 }
+
 a {
   text-decoration: none;
   // color: white;
@@ -15,13 +16,15 @@ a {
   font-family: "Roboto";
   font-weight: 500;
 }
+
 body {
   font-family: "Roboto Condensed";
   overflow-y: hidden;
 }
+
 .container {
   &_home {
-    background-image: url(./starter-code/assets/home/background-home-desktop.jpg);
+    background-image: url(../assets/home/background-home-desktop.jpg);
     height: 100vh;
     padding: 5em;
 
@@ -48,6 +51,7 @@ body {
     // margin-top: -30em;
     // margin-bottom: 8em;
   }
+
   .out-box {
     background-color: rgba(255, 255, 255, 0.07);
     height: 4em;
@@ -67,6 +71,7 @@ body {
     padding: 0.2em;
     display: flex;
   }
+
   .third-nav ul li a {
     line-height: 30px;
     color: #fff;
@@ -77,6 +82,7 @@ body {
     display: flex;
     word-spacing: 10px;
   }
+
   .third-nav ul li a:hover {
     background: rgba(255, 255, 255, 0.07);
     border-radius: 15px;
@@ -91,6 +97,7 @@ body {
     font-weight: 300;
     word-spacing: 2px;
   }
+
   h1 {
     font-family: "Noticia";
     font-weight: 300;
@@ -98,6 +105,7 @@ body {
     color: white;
     text-transform: uppercase;
   }
+
   span {
     color: white;
     padding-right: 5em;
@@ -130,17 +138,21 @@ body {
       letter-spacing: 2px;
     }
   }
+
   .container_destination {
-    background-image: url(./starter-code/assets/destination/background-destination-desktop.jpg);
+    background-image: url(../assets/destination/background-destination-desktop.jpg);
     padding: 5em;
     height: 100vh;
+
     h1 {
       padding-left: 0;
     }
+
     .subhead {
       margin-top: 4em;
     }
   }
+
   nav .logo .thin-line {
     height: 2px;
     width: 500px;
@@ -160,6 +172,7 @@ body {
       font-weight: 300;
       word-spacing: 2px;
     }
+
     .mars {
       img {
         height: 20em;
@@ -178,6 +191,7 @@ body {
         padding-left: 0;
         margin: 0;
       }
+
       .mid-nav ul {
         list-style: none;
         display: flex;
@@ -187,23 +201,25 @@ body {
         font-size: small;
         display: flex;
         gap: 40px;
-        
+
         .line {
           text-decoration: underline;
         }
 
       }
     }
+
     .note {
       padding: 0;
       width: 2em;
     }
+
     .one-line {
       height: 2px;
-    width: 400px;
-    background-color: #ffffff;
-    margin-top: 2em;
-    margin-bottom: 2em;
+      width: 400px;
+      background-color: #ffffff;
+      margin-top: 2em;
+      margin-bottom: 2em;
     }
 
     .features-list {
@@ -213,12 +229,13 @@ body {
       .features-section {
         // display: flex;
         color: #fff;
-  
+
         .sub-list {
           text-transform: uppercase;
           font-size: small;
           letter-spacing: 2px;
         }
+
         h4 {
           font-family: "Noticia";
           // padding-right: 2em;
