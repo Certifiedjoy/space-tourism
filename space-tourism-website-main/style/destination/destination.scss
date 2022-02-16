@@ -1,0 +1,194 @@
+$white-color: rgba(255, 255, 255, 1);
+$gray-color:rgba(208, 214, 249, 1);
+$dark-blue:rgba(11, 13, 23, 1);
+$light-gray:rgba(56, 59, 75, 1);
+$dark-black:rgba(255, 255, 255, 0.04);
+$navlist-bg:rgba(151, 151, 151, 0.049);
+$gideon-font:'Gideon Roman',
+cursive;
+$barlow:'Barlow',
+sans-serif;
+$barlow-condensed:'Barlow Condensed',
+sans-serif;
+$bellefair:'Bellefair',
+serif;
+
+*,
+*::after,
+*::before {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+// Global Classes..............
+body {
+    background-image: url('../assets/../../assets/destination/background-destination-desktop.jpg');
+    width: 1440px;
+    height: 900px;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+a {
+    text-decoration: none;
+}
+
+li {
+    list-style-type: none;
+}
+
+hr {
+    position: absolute;
+    width: 40%;
+    left: 10%;
+    z-index: 1;
+    opacity: 0.25;
+}
+
+
+// Global Classes Ended...........
+// mixins Classes.................
+@mixin fonts($family, $size, $weight, $style, $height, $spacing, $theme) {
+    font-family: $family;
+    font-size: $size;
+    font-weight: $weight;
+    font-style: $style;
+    line-height: $height;
+    letter-spacing: $spacing;
+    color: $theme;
+}
+
+// mixins Classes Ending.............
+
+nav {
+    width: 1385px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin: 4rem 3rem;
+
+    .nav-list {
+        background: $navlist-bg;
+        backdrop-filter: blur(81px);
+        padding: 3.7rem 0;
+        padding-left: 8rem;
+        width: 830px;
+        position: absolute;
+        right: 2px;
+        box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+
+        li {
+            display: inline-block;
+            padding: 0 3rem;
+
+
+
+            a {
+                @include fonts($barlow-condensed, 18px, lighter, 0, 0, 2px, $white-color);
+                display: flex;
+                align-items: center;
+
+                p {
+                    padding: 0 0.5rem;
+                    @include fonts($barlow-condensed, 20px, 600, normal, 0, 0, $white-color);
+
+                }
+            }
+
+
+
+        }
+    }
+}
+
+main {
+    margin: 1rem 10rem;
+
+    .left-content {
+        margin: 6rem 0;
+
+        p {
+            @include fonts($barlow-condensed, 28px, normal, normal, 34px, 4.725px, #FFFFFF);
+            text-transform: uppercase;
+
+            span {
+                @include fonts($barlow-condensed, 28px, bold, normal, 34px, 4.725px, #FFFFFF);
+                mix-blend-mode: normal;
+                opacity: 0.25;
+            }
+        }
+
+        img {
+            position: absolute;
+            width: 445px;
+            height: 445px;
+            top: 280px;
+            left: 232px;
+        }
+    }
+
+    .right-content {
+        position: absolute;
+        width: 445px;
+        left: 60%;
+        top: 30%;
+
+        ul {
+            display: flex;
+            text-align: center;
+
+            li {
+                padding: 0 1rem;
+
+                a {
+                    @include fonts($barlow-condensed, 16px, 400, normal, 19px, 2.700000047683716px, #D0D6F9);
+                }
+            }
+        }
+
+        .destination-details {
+            margin-top: 3rem;
+
+            h1 {
+                @include fonts($bellefair, 100px, normal, normal, 115px, 0, #FFFFFF);
+            }
+
+            p {
+                margin-top: 1rem;
+                @include fonts($barlow, 18px, normal, normal, 32px, 0, #D0D6F9);
+            }
+        }
+
+        .kilometers {
+            margin-top: 3rem;
+            display: flex;
+
+            .distance {
+                @include fonts($bellefair, 28px, normal, normal, 32px, 0px, #FFFFFF);
+                text-transform: uppercase;
+
+                span {
+                    @include fonts($barlow-condensed, 14px, normal, normal, 17px, 2.3625px, #D0D6F9);
+                    text-transform: uppercase;
+
+                }
+            }
+
+            .travel-time {
+                @extend .distance;
+                padding-left: 3rem;
+
+                span {
+                    @extend span
+                }
+            }
+        }
+    }
+
+    hr {
+        margin: 2rem -3rem;
+        width: 100%;
+    }
+}

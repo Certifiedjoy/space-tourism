@@ -1,0 +1,184 @@
+$white-color:rgba(255, 255, 255, 1);
+$gray-color:rgba(208, 214, 249, 1);
+$dark-blue:rgba(11, 13, 23, 1);
+$light-gray:rgba(56, 59, 75, 1);
+$dark-black:rgba(255, 255, 255, 0.04);
+$navlist-bg:rgba(151, 151, 151, 0.079);
+$gideon-font:'Gideon Roman',
+cursive;
+$barlow:'Barlow',
+sans-serif;
+$barlow-condensed:'Barlow Condensed',
+sans-serif;
+$bellefair:'Bellefair',
+serif;
+
+*,
+*::after,
+*::before {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+// mixins Classes.................
+@mixin fonts($family, $size, $weight, $style, $height, $spacing, $theme) {
+    font-family: $family;
+    font-size: $size;
+    font-weight: $weight;
+    font-style: $style;
+    line-height: $height;
+    letter-spacing: $spacing;
+    color: $theme;
+}
+
+@mixin bg-image($image) {
+    background-image: $image;
+    width: 1440px;
+    height: 900px;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+// mixins Classes Ending.............
+
+// Global Classes..............
+
+body {
+    @include bg-image(url('../../assets/technology/background-technology-desktop.jpg'))
+}
+
+a {
+    text-decoration: none;
+}
+
+li {
+    list-style-type: none;
+}
+
+// Global Classes Ended...........
+
+nav {
+    width: 1385px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin: 4rem 3rem;
+
+    .nav-list {
+        background: $navlist-bg;
+        backdrop-filter: blur(81px);
+        padding: 3.7rem 0;
+        padding-left: 8rem;
+        width: 830px;
+        position: absolute;
+        right: 2px;
+        box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+
+        li {
+            display: inline-block;
+            padding: 0 3rem;
+
+
+
+            a {
+                @include fonts($barlow-condensed, 18px, lighter, 0, 0, 2px, $white-color);
+                display: flex;
+                align-items: center;
+
+                p {
+                    padding: 0 0.5rem;
+                    @include fonts($barlow-condensed, 20px, 600, normal, 0, 0, $white-color);
+
+                }
+            }
+
+
+
+        }
+    }
+}
+
+main {
+    margin: 1rem 10rem;
+
+    p {
+        @include fonts($barlow-condensed, 28px, normal, normal, 34px, 4.725px, #FFFFFF);
+        text-transform: uppercase;
+
+        span {
+            @include fonts($barlow-condensed, 28px, bold, normal, 34px, 4.725px, #FFFFFF);
+            mix-blend-mode: normal;
+            opacity: 0.25;
+        }
+    }
+
+    .left-content {
+        margin: 6rem 0;
+
+        ul {
+            display: flex;
+            flex-direction: column;
+            margin-top: 12rem;
+            row-gap: 30px;
+
+            li {
+                padding: 3rem 0;
+                width: 80px;
+                height: 80px;
+
+                a {
+                    border: 1px solid #FFFF;
+                    padding: 2rem 2.5rem;
+                    border-radius: 700%;
+                    @include fonts($barlow-condensed, 16px, 400, normal, 19px, 2.700000047683716px, #FFFFFF);
+                    align-items: center;
+                }
+            }
+        }
+
+        .technology-details {
+            margin-top: 3rem;
+            position: absolute;
+            top: 300px;
+            left: 300px;
+            width: 470px;
+            height: 303px;
+
+
+            h6 {
+                @include fonts($barlow-condensed, 16px, 400, normal, 19px, 2.700000047683716px, #D0D6F9);
+
+            }
+
+            h1 {
+                @include fonts($bellefair, 56px, normal, normal, 64px, 0, #FFFFFF);
+                margin-top: 1rem;
+            }
+
+
+            h5 {
+                margin-top: 1.5rem;
+                @include fonts($barlow, 18px, normal, normal, 32px, 0, #D0D6F9);
+            }
+        }
+
+    }
+
+    .right-content {
+
+        img {
+            position: absolute;
+            width: 515px;
+            height: 527px;
+            top: 232px;
+            left: 925px;
+        }
+
+    }
+
+    hr {
+        margin: 2rem -3rem;
+        width: 100%;
+    }
+}

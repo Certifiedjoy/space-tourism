@@ -5,47 +5,63 @@
   <meta charset="UTF-8" />
   <meta http-equiv="X-UA-Compatible" content="IE=edge" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>space-tourism</title>
-  <link rel="stylesheet" href="../../style/main.css" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="icon" type="image/png" sizes="32x32" href="./assets/favicon-32x32.png">
+  <title>Frontend Mentor | Space tourism website</title>
 
+  <!-- custom css styling -->
+  <link rel="stylesheet" href="../../style/technology/technology.css" />
+
+  <!-- Goggle font link -->
+  <link href="https://fonts.googleapis.com/css2?family=Gideon+Roman&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Barlow&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Barlow+Condensed&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Bellefair&display=swap" rel="stylesheet">
 
 </head>
 
 <body>
-  <div class="container">
-    <div class="third-container">
-      <nav>
-        <img src="../assets/technology/background-technology-desktop.jpg" alt="tech" />
+  <nav>
+    <div class="logo">
+      <a href=""> <img src="../../assets/shared/logo.svg" alt="logo"> </a>
     </div>
-    <div class="third-nav">
-      <a class="desktop-menu" href="index.html">00 Home</a>
-      <a class="desktop-menu" href="destination.html">01 Destination</a>
-      <a class="desktop-menu" href="crew.html">02 Crew</a>
-      <a class="desktop-menu" href="techonology.html">03 Technology</a>
-    </div>
-    </nav>
-    <div class="left-col">
-      <p class="subhead">03 Space launch 101</p>
-    </div>
-    <div class="main">
-      <div>
-        <span>The terminology...</span>
+    <hr>
+
+    <ul class="nav-list">
+      <li> <a href="../index.html""> <p> 00 </p> HOME</a> </li>
+      <li> <a href=" ../destination/destination-index.html"> <p> 01 </p> DESTINATION</a> </li>
+      <li> <a href="../crew/crew-index.html">
+          <p> 02 </p> CREW
+        </a> </li>
+      <li> <a href="../technology/techonology-index.html">
+          <p> 03 </p> TECHNOLOGY
+        </a> </li>
+    </ul>
+  </nav>
+
+  <main>
+    <div class="left-content">
+      <p><span> 03 </span> SPACE LAUNCH 101 </p>
+      <ul>
+        <li> <a href="destination-index.html"> 1 </a> </li>
+        <li> <a href="technology-spaceport.html"> 2 </a> </li>
+        <li> <a href="technology-capsule.html"> 3 </a> </li>
+      </ul>
+      <div class="technology-details">
+        <h6> THE TERMINOLOGY… </h6>
+        <h1> LAUNCH VEHICLE </h1>
+        <h5> A launch vehicle or carrier rocket is a rocket-propelled vehicle used to carry a payload from Earth's
+          surface to space, usually to Earth orbit or beyond. Our WEB-X carrier rocket is the most powerful in
+          operation. Standing 150 metres tall, it's quite an awe-inspiring sight on the launch pad! </h5>
       </div>
-      <div>
-        <h1>Launch vehicle</h1>
-        <span>A launch vehicle or carrier rocket is a rocket-propelled vehicle
-          used to carry a payload from Earth's surface to space, usually to
-          Earth orbit or beyond. Our WEB-X carrier rocket is the most powerful
-          in operation. Standing 150 metres tall, it's quite an awe-inspiring
-          sight on the launch pad!</span>
-      </div>
+      <!-- <hr> -->
+
     </div>
 
-    <div>
-      <img src="./starter-code/assets/technology/image-launch-vehicle-portrait.jpg"
-        alt="image-launch-vehicle-portrait" />
+    <div class="right-content">
+      <img src="../../assets/technology/image-launch-vehicle-portrait.jpg" />
     </div>
-  </div>
+  </main>
 </body>
 
 </html>

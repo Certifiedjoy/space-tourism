@@ -1,0 +1,202 @@
+$white-color:rgba(255, 255, 255, 1);
+$gray-color:rgba(208, 214, 249, 1);
+$dark-blue:rgba(11, 13, 23, 1);
+$light-gray:rgba(56, 59, 75, 1);
+$dark-black:rgba(255, 255, 255, 0.04);
+$navlist-bg:rgba(151, 151, 151, 0.079);
+$gideon-font:'Gideon Roman',
+cursive;
+$barlow:'Barlow',
+sans-serif;
+$barlow-condensed:'Barlow Condensed',
+sans-serif;
+$bellefair:'Bellefair',
+serif;
+
+*,
+*::after,
+*::before {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+// mixins Classes.................
+@mixin fonts($family, $size, $weight, $style, $height, $spacing, $theme) {
+    font-family: $family;
+    font-size: $size;
+    font-weight: $weight;
+    font-style: $style;
+    line-height: $height;
+    letter-spacing: $spacing;
+    color: $theme;
+}
+
+@mixin bg-image($image) {
+    background-image: $image;
+    width: 1440px;
+    height: 900px;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+// mixins Classes Ending.............
+
+// Global Classes..............
+
+body {
+    @include bg-image(url('../../assets/crew/background-crew-desktop.jpg'))
+}
+
+a {
+    text-decoration: none;
+}
+
+li {
+    list-style-type: none;
+}
+
+// Global Classes Ended...........
+
+nav {
+    width: 1385px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin: 4rem 3rem;
+
+    .nav-list {
+        background: $navlist-bg;
+        backdrop-filter: blur(81px);
+        padding: 3.7rem 0;
+        padding-left: 8rem;
+        width: 830px;
+        position: absolute;
+        right: 2px;
+        box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+
+        li {
+            display: inline-block;
+            padding: 0 3rem;
+
+
+
+            a {
+                @include fonts($barlow-condensed, 18px, lighter, 0, 0, 2px, $white-color);
+                display: flex;
+                align-items: center;
+
+                p {
+                    padding: 0 0.5rem;
+                    @include fonts($barlow-condensed, 20px, 600, normal, 0, 0, $white-color);
+
+                }
+            }
+
+
+
+        }
+    }
+}
+
+hr {
+    position: absolute;
+    width: 40%;
+    left: 10%;
+    z-index: 1;
+    opacity: 0.25;
+}
+
+
+
+
+.main {
+    margin: 0 10rem;
+    background: url('../../assets/crew/image-douglas-hurley.png');
+    background-repeat: no-repeat;
+    width: 100%;
+    height: 850px;
+    position: relative;
+    background-position-x: 80%;
+    background-position-y: 5%;
+
+    .crew {
+        padding: 6rem 0;
+
+        p {
+            @include fonts($barlow-condensed, 28px, normal, normal, 34px, 4.725px, #FFFFFF);
+            text-transform: uppercase;
+
+            span {
+                @include fonts($barlow-condensed, 28px, bold, normal, 34px, 4.725px, #FFFFFF);
+                mix-blend-mode: normal;
+                opacity: 0.25;
+            }
+        }
+
+        .crew-details {
+            margin-top: 10rem;
+            // width: 540px;
+
+            h2 {
+                @include fonts($bellefair, 32px, normal, normal, 37px, 0, #FFFFFF);
+                text-transform: uppercase;
+                mix-blend-mode: normal;
+                opacity: 0.5;
+                width: 400px;
+            }
+
+            h1 {
+                margin-top: 1rem;
+                @include fonts($bellefair, 56px, normal, normal, 64px, 0, #FFFFFF);
+                text-transform: uppercase;
+                width: 6 88px;
+            }
+
+            h6 {
+                margin-top: 3rem;
+                width: 444px;
+                @include fonts($barlow, 18px, normal, normal, 32px, 0, #D0D6F9);
+            }
+        }
+    }
+
+}
+
+.main-specialist {
+    @extend .main;
+    background: url('../../assets/crew//image-mark-shuttleworth.webp');
+    background-repeat: no-repeat;
+    margin: 0 10rem;
+    background-repeat: no-repeat;
+    width: 100%;
+    // height: 950px;
+    position: relative;
+    background-position-x: 80%;
+    background-position-y: 20%;
+
+}
+
+.main-pilot {
+    @extend .main;
+    background: url('../../assets/crew/image-victor-glover.webp');
+    margin: 0 10rem;
+    background-repeat: no-repeat;
+    width: 100%;
+    height: 850px;
+    position: relative;
+    background-position-x: 80%;
+    background-position-y: 19%;
+}
+
+.main-engineer {
+    @extend .main;
+    background: url('../../assets/crew/image-anousheh-ansari.webp');
+    margin: 0 10rem;
+    background-repeat: no-repeat;
+    width: 100%;
+    height: 850px;
+    position: relative;
+    background-position-x: 80%;
+    background-position-y: 32%;
+}
